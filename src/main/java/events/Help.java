@@ -28,7 +28,7 @@ public class Help extends ListenerAdapter {
         String messageSent = event.getMessage().getContentRaw();
         if (messageSent.equals("!help")) {
             event.getChannel().sendTyping().queue();
-            info.setFooter("Created by oreze", event.getAuthor().getAvatarUrl());
+            info.setFooter("Created by Oreze", event.getAuthor().getAvatarUrl());
             Util.sleep(1000);
             event.getChannel().sendMessage(info.build()).queue();
         }
